@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maharashtra Fort Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
 </head>
+
 <body>
-    
+
+<h1>Maharashtra Fort Gallery</h1>
+
+<div class="gallery-container">
+
+<span class="btn-slide" onclick="slideLeft()">&#60;</span>
+
+<img src="images/Anjaneri.jpeg" class="main-img" id="mainImage">
+
+<span class="btn-slide" onclick="slideRight()">&#62;</span>
+
+</div>
+
+<h3 id="title"></h3>
+
+<p id="description"></p>
+
+<div id="gallery-preview" class="gallery-preview"></div>
+
+<script src="gallery.js"></script>
+
 </body>
 </html>
