@@ -8,10 +8,10 @@ function toggleMenu(){
 /* ================= IMAGE SLIDER ================= */
 
 const images = [
-    "./img1.jpg",
-    "./img2.jpg",
-    "./img3.jpg",
-    "./img4.jpg"
+    "./../images/home/img1.jpg",
+    "./../images/home/img2.jpg",
+    "./../images/home/img3.jpg",
+    "./../images/home/img4.jpg"
 ];
 
 let index = 0;
@@ -81,31 +81,31 @@ function animateCounter(id, targetValue) {
 /* ================= CARD DATA ================= */
 
 const cardData1 = [
-  { img: "./part1-img1.jpg", title: "CORPORATE TRIPS & TREKS" },
-  { img: "./part1-img4.jpg", title: "CUSTOMIZED TREKS/TRIPS" },
-  { img: "./part1-img5.jpg", title: "FOR B-SCHOOLS & COLLEGES" },
-  { img: "./part1-img6.jpg", title: "BIKE & BACKPACKING TRIPS" }
+  { img: "./../images/home/part1-img1.jpg", title: "CORPORATE TRIPS & TREKS" },
+  { img: "./../images/home/part1-img4.jpg", title: "CUSTOMIZED TREKS/TRIPS" },
+  { img: "./../images/home/part1-img5.jpg", title: "FOR B-SCHOOLS & COLLEGES" },
+  { img: "./../images/home/part1-img6.jpg", title: "BIKE & BACKPACKING TRIPS" }
 ];
 
 const cardData2 = [
-  { img: "./img5.jpeg", title: "Sinhagad Fort" },
-  { img: "./img6.jpg", title: "Pratapgad Fort" },
-  { img: "./img7.jpg", title: "RatnagiriRatnadurg Fort " },
-  { img: "./img8.jpg", title: "Shivneri Fort" }
+  { img: "./../images/home/img5.jpeg", title: "Sinhagad Fort" },
+  { img: "./../images/home/img6.jpg", title: "Pratapgad Fort" },
+  { img: "./../images/home/img7.jpg", title: "RatnagiriRatnadurg Fort " },
+  { img: "./../images/home/img8.jpg", title: "Shivneri Fort" }
 ];
 
 const cardData3 = [
-  { img: "./img9.jpg", title: " Loghagad Fort " },
-  { img: "./img10.jpeg", title: "Murud janjira" },
-  { img: "./img11.jpg", title: "Purandar Fort" },
-  { img: "./img12.jpeg", title: "Torna Fort" }
+  { img: "./../images/home/img9.jpg", title: " Loghagad Fort " },
+  { img: "./../images/home/img10.jpeg", title: "Murud janjira" },
+  { img: "./../images/home/img11.jpg", title: "Purandar Fort" },
+  { img: "./../images/home/img12.jpeg", title: "Torna Fort" }
 ];
 
 const cardData4 = [
-  { img: "./img13.jpeg", title: "Harihar Fort" },
-  { img: "./img14.jpg", title: "Kalsubai Peak" },
-  { img: "./img15.jpg", title: "Ratangad Fort" },
-  { img: "./img16.jpeg", title: "Harishchandragad trek " }
+  { img: "./../images/home/img13.jpeg", title: "Harihar Fort" },
+  { img: "./../images/home/img14.jpg", title: "Kalsubai Peak" },
+  { img: "./../images/home/img15.jpg", title: "Ratangad Fort" },
+  { img: "./../images/home/img16.jpeg", title: "Harishchandragad trek " }
 ];
 
 
