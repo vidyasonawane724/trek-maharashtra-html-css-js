@@ -1,4 +1,421 @@
-body{
-    margin: opx;
-    padding: 0px;
+/* ================= COLOR VARIABLES ================= */
+:root{
+    --primary-green:#094438;
+    --secondary-green:#1bb798;
+    --accent:#C0B87A;
+    --white:#ffffff;
+    color:#555;
+}
+
+/* ================= SLIDER ================= */
+
+.ig{
+    width:100%;
+    height:500px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Overlay Text */
+
+.hero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    width:100%;
+    padding:0 20px;
+}
+
+/* Title */
+
+.hero-title{
+    font-size:48px;
+    font-weight:700;
+    text-shadow:0 4px 15px rgba(0,0,0,0.6);
+}
+
+/* Subtitle */
+
+.hero p{
+    font-size:18px;
+    margin-top:10px;
+    text-shadow:0 2px 10px rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .ig{
+        height:320px;
+    }
+
+    .hero-title{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+}
+/* ================= GENERATOR SECTION ================= */
+
+.search-container{
+    background: var(--white);
+    width: 80%;
+    max-width: 700px;
+    margin: -50px auto 40px;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    position:relative;
+    z-index:999; /* ⭐ High priority layer */
+}
+
+#trek-result {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color:#1bb798;
+}
+
+/* Button */
+.btn-action {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    transform: scale(1.05);
+    background-color: #094438;
+}
+
+/* ================= STATS SECTION ================= */
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 25px 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h2 {
+    font-size: 2.8rem;
+    color: #1bb798;
+    margin: 0;
+}
+
+.stat-card p {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: var(--dark-text);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .search-container{
+        width: 92%;
+        margin-top: -40px;
+    }
+
+    .stats-grid{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+/* ---------------------------------------------------------------- part 1 ----------------------------------------------------- */
+/* ================= EXPLORE SECTION ================= */
+
+.explore{
+    text-align:center;
+    font-size:32px;
+    margin-top:60px;
+    color:rgb(88, 88, 88);
+}
+
+.explore-part{
+    color:#1bb798;
+}
+
+.explore-subheading{
+    text-align:center;
+    font-size:18px;
+    margin-bottom:40px;
+    color:#555;
+}
+
+/* ================= CARD CONTAINER ================= */
+
+.card-container{
+   
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+/* ================= CARD DESIGN ================= */
+
+.trek-card{
+    background:white;
+    width:280px;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.trek-card img{
+    width:50%;
+    
+    object-fit:cover;
+    transition:0.3s ease;
+}
+
+.trek-card p{
+    padding:15px;
+    font-weight:600;
+    color:#094438;
+}
+
+.trek-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.trek-card:hover img{
+    transform:scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+        .trek-card{
+        width:90%;
+    }
+}
+
+/* ------- -----------------------------------------------*/
+.explore-btn{
+    background-color:#094438;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+.explore-btn:hover { transform: scale(1.05); }
+/* ================= DIY TREK SECTION   part 6 ================= */
+
+.diy-section{
+  padding:80px 8%;
+  text-align:center;
+  background:#f4f9f1;
+}
+
+.diy-title{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:#555;
+}
+
+.diy-title span{
+  color:#1bb798;
+}
+
+.diy-subtitle{
+  color:#666;
+  margin-bottom:60px;
+  font-size:18px;
+}
+
+/* Layout */
+.diy-container{
+  display:flex;
+  gap:30px;
+  align-items:stretch;
+}
+
+.diy-big{
+  flex:1.2;
+  height:520px;
+}
+
+.diy-grid{
+  flex:1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+/* Card */
+.diy-card{
+  position:relative;
+  border-radius:20px;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+  transition:0.4s ease;
+}
+
+.diy-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.6s ease;
+}
+
+.diy-card:hover img{
+  transform:scale(1.1);
+}
+
+.diy-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 25px 40px rgba(0,0,0,0.15);
+}
+
+/* Overlay */
+.diy-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.2), transparent);
+}
+
+/* Text */
+.diy-text{
+  position:absolute;
+  bottom:25px;
+  left:0;
+  right:0;
+  color:white;
+  font-weight:700;
+  font-size:20px;
+  text-align:center;
+  letter-spacing:1px;
+  z-index:2;
+  text-transform:uppercase;
+}
+
+/* Responsive */
+@media(max-width:992px){
+  .diy-container{
+    flex-direction:column;
+  }
+  .diy-big{
+    height:420px;
+  }
+}
+
+@media(max-width:600px){
+  .diy-grid{
+    grid-template-columns:1fr;
+  }
+  .diy-title{
+    font-size:30px;
+  }
+  .diy-big{
+    height:350px;
+  }
+}
+
+
+/* ================= PART 5 - TREK VIDEOS ================= */
+
+.video-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.video-box{
+    width:420px;
+}
+
+.video-poster{
+    position:relative;
+    cursor:pointer;
+}
+
+.video-poster img{
+    width:100%;
+    height: 300px;
+    border-radius:10px;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:12px 20px;
+    border-radius:50%;
+}
+/* ===== VIDEO RESPONSIVE ===== */
+@media(max-width:768px){
+
+    .video-container{
+        gap:20px;
+        padding:20px 15px;
+    }
+
+    .video-box{
+        width:100%;
+    }
+
+    .video-box iframe{
+        height:220px;
+    }
 }
