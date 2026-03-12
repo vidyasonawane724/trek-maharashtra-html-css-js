@@ -241,22 +241,18 @@ display:flex;
   background: #084298;
 }
 
-.price{
-    color:#2c7be5;
-    font-weight:bold;
-}
 
 .book-btn{
-    background:#2c7be5;
+    background:#31443b;
     color:white;
 }
 
 .book-btn:hover{
-    background:#1a5fd1;
+    background:#31443b;
 }
 
 .fav-btn{
-    background:#eeadad;
+    background:#31443b;
     border:none;
     padding:8px 15px;
     border-radius:5px;
@@ -264,7 +260,7 @@ display:flex;
 }
 
 .fav-btn.active{
-    background:#f1cdd4;
+    background:#31443b;
     color:white;
 }
 
