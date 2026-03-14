@@ -19,66 +19,40 @@ Built using <b>HTML, CSS and JavaScript</b>.
 
 ## 📸 Website Preview
 
-![Website Preview](images/trek-banner.jpg)
+<img src="./images/homepage-screenshot.png" width="900">
 
 ---
 
 ## 🏔️ Popular Treks
 
-| Trek             | Image                                            |
-| ---------------- | ------------------------------------------------ |
-
-| Harishchandragad | ![Raigad](./images/Rajgad%20Fort.jpeg) |
-            |
+| Trek | Image |
+|-----|------|
+| Rajgad | <img src="./images/Rajgad%20Fort.jpeg" width="150"> |
+| Lohagad | <img src="./images/lohagad.jpg" width="150"> |
+| Harishchandragad | <img src="./images/harishchandragad.jpg" width="150"> |
+| Kalsubai | <img src="./images/kalsubai.jpg" width="150"> |
+| Torna | <img src="./images/torna.jpg" width="150"> |
 
 ---
 
 ## 📌 Features
 
-✨ Information about famous trekking places
-📱 Responsive design
-🖼️ Beautiful trekking images
-🧭 Easy navigation
-⚡ Fast static website
+✨ Information about famous trekking places  
+📱 Responsive design  
+🖼️ Beautiful trekking images  
+🧭 Easy navigation  
+⚡ Fast static website  
 
 ---
 
 ## 🛠️ Tech Stack
 
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
 ---
 
-## 📂 Project Structure
-
-```
-trek-maharashtra-html-css-js
-│
-├── index.html
-├── css
-│   └── style.css
-├── js
-│   └── script.js
-├── images
-│   ├── rajmachi.jpg
-│   ├── lohagad.jpg
-│   ├── harishchandragad.jpg
-│   ├── kalsubai.jpg
-│   └── torna.jpg
-└── README.md
-```
-
----
-
-## 🚀 How to Run
-
-Clone the repository
-
-```
-git clone https://github.com/pranalishinde06/trek-maharashtra-html-css-js.git
-```
 
 Open **index.html** in your browser.
 
@@ -100,4 +74,5 @@ If you like this project, give it a ⭐ on GitHub.
 
 ## 📜 License
 
-This project is open source.
+This project is open source and free to use.
+
