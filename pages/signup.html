@@ -1,49 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trek Portal</title>
 <link rel="stylesheet" href="./../css/signup.css">
-<link rel="icon" type="image-icon" href="./../images/common-image/trekking-logo.png">
 </head>
 
 <body>
+    <header>
+        <div class="main-containe">
+            <div class="navbar-main-container">
+                <div class="logo-container">
+                    <img src="./../images/trek-logo.png" alt="interior-design-logo" height="50px" class="main-logo">
+                    <b class="project-name">Maharashtra Trekking Portal</b>
+                </div>
 
-<div class="container">
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <!-- SIGN UP -->
-    <div class="form-box signup">
-        <h2>Create Account</h2>
+                <div class="nav-links-container" id="navMenu">
+                    <a href="../index.html" class="nav-text-container"> Home</a>
+                    <a href="../pages/about.html" class="nav-text-container">About</a>
+                    <a href="../pages/trek.html" class="nav-text-container">Treks</a>
+                    <a href="../pages/gallery.html" class="nav-text-container">Gallery</a>
+                    <a href="../pages/contact.html" class="nav-text-container">Contact</a>
+                    <a href="../pages/feedback.html" class="nav-text-container">Feedback</a>
+                    <a href="../pages/favourite.html" class="nav-text-container">Favourites</a>
+                </div>
 
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
+                <div class="auth-links-containar">
+                    <a href="../pages/login.html" class="nav-text-container">Login</a>
+                    <a href="../pages/signup.html" class="nav-text-container">Sign Up</a>
+                </div>
+            </div>
 
-        <label class="check">
-            <input type="checkbox"> Accept Terms & Conditions
-        </label>
+    </header>
 
-        <button class="btn">Sign Up</button>
+    <div class="container">
 
-        <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+        <div class="login-box">
+
+            <h1>Create Account</h1>
+            <p>Join Trek Maharashtra</p>
+
+            <form>
+                <div class="input-box">
+                <input type="text" id="name" placeholder="Enter Full Name"><br/><br/><br/>
+                <input type="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="input-box">
+                <input type="text" id="name" placeholder="Enter Mobile no"><br/><br/><br/>
+                <input type="adddress" id="name" placeholder="Enter Your address">
+                    </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Enter password">
+                    <img src="../images/view.png" class="img-toggle" height="20"
+                        onclick="togglePassword('password', this)">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    <img src="../images/view.png" class="img-toggle" height="20"
+                        onclick="togglePassword('confirmPassword', this)">
+                </div>
+
+                <p id="errorMsg" style="color:red;"></p>
+
+                <p id="successMsg" style="color:green; display:none;">
+                    Account created successfully! You can login now.
+                    <a href="./../pages/login.html"><button type="button"  >Login</button>
+                    </a>
+                    
+                </p>
+
+                <button type="button" onclick="registerUser()">Register</button><br/><br/>
+                <h4 align="center" >If you have already account then you can <a href="../pages/login.html" >Login</a></h4>
+            </form>
+
+        </div>
+
     </div>
 
 
-    <!-- LOGIN -->
-    <div class="form-box login">
-        <h2>Welcome Back</h2>
 
-       <h3>Already registered? To stay connected, please loginwith your details</h3>
 
-        <button class="btn">Login</button>
+    <script src="../js/signup.js"></script>
 
-        <p>Don't have an account? <span onclick="showSignup()">Sign Up</span></p>
+   <footer class="main-footer">
+
+    <div class="footer-container">
+
+
+  <div class="footer-col">
+            <h3>PAGES</h3>
+           <a href="./../index.html">Home</a><br>
+           <a href="./pages/about.html">About</a><br>
+           <a href="./pages/treks.html">Treks</a><br>
+           <a href="./pages/gallery.html">Gallery</a><br>
+            <a href="./pages/feedback.html">Feedback</a><br>
+           <a href="./pages/favorites.html">Favorites</a><br>
+           <a href="./pages/login.html">Login</a><br>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>SUPPORT INFO</h3>
+            <p><a href="mailto:homiq@gmail.com">highfive@maharashtratreks.com</a></p>
+            <p><strong>Head Office</strong><br><a href="tel:9234567890">+91 9234567890</a></p>
+            <p><strong>Mumbai</strong><br><a href="tel:8591064044">+91 8591064044</a></p>
+            <p><strong>Pune</strong><br><a href="tel:9359236135">+91 9359236135</a></p>
+        </div>
+
+        <div class="footer-col">
+            <h3>TERMS & CONDITIONS</h3>
+            <p>Terms and Condition</p>
+            <p>Registration Process</p>
+            <p>Payment Options</p>
+            <p>Refund Policy</p>
+            <p>User Agreement</p>
+            <p>Privacy Policy</p>
+        </div>
+
+
+<div class="footer-col">
+            <h3>Treks by Seasons</h3>
+			<p><a href="#">Summer Treks</a></p>
+			<p><a href="#">Monsoon Treks</a></p>
+			<p><a href="#">Autumn Treks</a></p>
+			<p><a href="#">Winter Treks</a></p>
+        </div>
+
+
+
+        <div class="footer-col">
+            <h3>CONTACT INFO</h3>
+            <a href="https://maps.app.goo.gl/Z1JZnKfSWdZ5woG98" target="_blank" rel="noopener">
+            1C Floor, Nava Nagar, Dockyard
+            Mazgaon, Mumbai 400010
+            Payment is encrypted and secure with SSL.</a>
+        </div>
+
     </div>
 
-</div>
+    <div class="social-icons">
+    <a href="https://www.facebook.com/maharashtratreks/" target="_blank">
+    <img src="./../images/facebook.png" width="30"></a>
 
-<script src="./../js/signup.js"></script>
+    <a href="https://www.instagram.com/maharashtratreks/"  target="_blank">
+    <img src="./../images/instagram.png" width="30"></a>
+
+    <a href="https://www.youtube.com/@maharashtratreks" target="_blank">
+    <img src="./../images/youtub.png" width="30"></a>
+    
+    <a href="https://web.whatsapp.com/maharashtratreks/" target="_blank">
+        <img src="./../images/whatapp.png" width="30"></a>
+
+    <a href="https://www.inlinkedin.com/maharashtratreks/" target="_blank">
+        <img src="./../images/linkedin.png" width="30"></a>
+
+    <a href="https://web.twitter.com/maharashtratreks/" target="_blank">
+        <img src="./../images/twitter.png" width="30"></a>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Maharashtra Trekking Portal
+    </div>
+</footer>
+
+
+
+    
 
 </body>
+
 </html>
